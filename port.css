@@ -1,0 +1,192 @@
+:root {
+    --bg: #ffffff;
+    --text: #222;
+    --primary: #00adb5;
+    --secondary: #393e46;
+}
+
+body.dark {
+    padding: 15px 0;
+}
+
+.header {
+    background: var(--secondary);
+    position: sticky;
+    top: 0;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 30px;
+    list-style: none;
+    margin: 5px;
+}
+
+.header li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    font-size: 1.2rem;
+}
+
+.header li a:hover {
+    color: #ffdd59;
+}
+
+.nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: #040404;
+    background-image: url(kundanbhai.png);
+    background-position: right bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    border-radius: 50px;
+    border: 2px solid rgb(3, 145, 121);
+    box-shadow: 0 3px 5px rgb(3, 145, 121);
+}
+
+.home span {
+    color: #ffdd59
+}
+
+.buttons {
+    margin-top: 20px
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #ffdd59;
+    color: #222;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.btn.secondary {
+    background: #fff
+}
+
+.section {
+    padding: 60px 10%;
+}
+
+.skills,
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.skill,
+.project {
+    padding: 20px;
+    background: #1aaeb0;
+    border-radius: 8px;
+}
+
+.footer {
+    background: var(--secondary);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+#contact {
+    background: var(--bg);
+    background-color: rgb(38, 35, 35);
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+#contactForm {
+    max-width: 500px;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+body.dark #contactForm {
+    background: #1f1f1f;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Inputs & textarea */
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+body.dark #contactForm input,
+body.dark #contactForm textarea {
+    background: #2b2b2b;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+
+/* Focus effect */
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: var(--primary);
+}
+
+
+/* Button */
+
+#contactForm button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contactForm button:hover {
+    background: #007b82;
+}
+
+body {
+    background-color: rgb(36, 34, 34);
+    color: white;
+}
+
+p {
+    font-size: 20px;
+}
